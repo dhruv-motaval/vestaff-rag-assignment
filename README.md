@@ -209,7 +209,7 @@ https://console.groq.com
 
 Run the backend and frontend separately.
 
-## Terminal 1 — FastAPI Backend
+## Terminal 1: FastAPI Backend
 
 ```bash
 uvicorn app.main:app --reload
@@ -229,7 +229,7 @@ http://localhost:8000/docs
 
 ---
 
-## Terminal 2 — Streamlit Frontend
+## Terminal 2: Streamlit Frontend
 
 ```bash
 streamlit run streamlit_app.py

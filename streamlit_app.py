@@ -8,7 +8,7 @@ st.set_page_config(page_title="AWS RAG Q&A", page_icon="📄")
 st.title("📄 AWS Customer Agreement — RAG Q&A")
 st.markdown("Powered by **LangChain** + **Groq** + **ChromaDB**")
 
-# ── SIDEBAR ───────────────────────────────────────────────────────────────────
+# SIDEBAR
 with st.sidebar:
     st.header("⚙️ Settings")
     st.divider()
@@ -40,7 +40,7 @@ with st.sidebar:
         st.rerun()
 
 
-# ── CHAT PAGE ─────────────────────────────────────────────────────────────────
+# CHAT PAGE
 if page == "💬 Chat":
     if "messages" not in st.session_state:
         st.session_state.messages = []
@@ -107,7 +107,7 @@ if page == "💬 Chat":
                 message_placeholder.error("Cannot connect to FastAPI.")
 
 
-# ── ANALYTICS PAGE ────────────────────────────────────────────────────────────
+# ANALYTICS PAGE
 elif page == "📊 Analytics":
     st.subheader("📊 Usage Analytics")
 
